@@ -589,10 +589,11 @@ p.disclaimer{margin:24px 0 0!important;font-size:13px!important;line-height:1.7!
   <div class="rail-inner">
     <div class="rail-head">
       <span class="rail-lbl"><span class="rail-zh">往期</span>Archive</span>
-      <span class="rail-count">4 期</span>
+      <span class="rail-count">5 期</span>
     </div>
     <ul class="a-list">
-      <li class="a-current"><a href="digest-2026-11-23.html"><span class="a-date">2026-11-23</span><span class="a-zh">周一 · 2026年11月23日</span></a></li>
+      <li class="a-current"><a href="digest-2026-11-24.html"><span class="a-date">2026-11-24</span><span class="a-zh">周二 · 2026年11月24日</span></a></li>
+      <li><a href="digest-2026-11-23.html"><span class="a-date">2026-11-23</span><span class="a-zh">周一 · 2026年11月23日</span></a></li>
       <li><a href="digest-2026-11-22.html"><span class="a-date">2026-11-22</span><span class="a-zh">周日 · 2026年11月22日</span></a></li>
       <li><a href="digest-2026-11-21.html"><span class="a-date">2026-11-21</span><span class="a-zh">周六 · 2026年11月21日</span></a></li>
       <li><a href="digest-2026-11-17.html"><span class="a-date">2026-11-17</span><span class="a-zh">周二 · 2026年11月17日</span></a></li>
@@ -600,7 +601,7 @@ p.disclaimer{margin:24px 0 0!important;font-size:13px!important;line-height:1.7!
   </div>
 </aside>
 <script src="archive.js"></script>
-<nav class="toc" aria-label="本期目录"><div class="toc-inner"><div class="toc-head"><span class="rail-zh">本期目录</span>Contents</div><ul><li class="t-sec"><a href="#intro">本期<span class="n">0</span></a><ul></ul></li><li class="t-sec"><a href="#s-1">一、先对准这条分界：现场赢了，还要让下一家从更高处出发<span class="n">0</span></a><ul></ul></li><li class="t-sec"><a href="#s-2">二、Palantir：现场配置和代码，怎样被回收进平台<span class="n">3</span></a><ul><li class="t-it"><a href="#s-2-1">两条轨道：一边服务「这一家」，一边服务「下一家」</a></li><li class="t-it"><a href="#s-2-2">缺功能时可以动手，但要走产品和评审</a></li><li class="t-it"><a href="#s-2-3">配置本身也要被分享，而不是留在单个项目里</a></li></ul></li><li class="t-sec"><a href="#s-3">三、OpenAI：Field notes、产品汇报，以及 Presence 与 Agents SDK 怎样从部署里长出来<span class="n">4</span></a><ul><li class="t-it"><a href="#s-3-1">先看已经公开的例行接口</a></li><li class="t-it"><a href="#s-3-2">从 Swarm 到 Agents SDK：把现场好用的框架收成产品</a></li><li class="t-it"><a href="#s-3-3">Presence：先分清什么必须定制，什么可以变成砌块</a></li><li class="t-it"><a href="#s-3-4">把定制压下去：共同基座、可复用模式，以及「两个月变成一天」</a></li></ul></li><li class="t-sec"><a href="#s-4">四、例行接口该长成什么样，以及何时该拒绝定制<span class="n">3</span></a><ul><li class="t-it"><a href="#s-4-1">Anthropic：把模式整理直接写进职责</a></li><li class="t-it"><a href="#s-4-2">把已经公开的接口放到一起看</a></li><li class="t-it"><a href="#s-4-3">何时该拒绝定制</a></li></ul></li><li class="t-sec"><a href="#s-5">下期预告<span class="n">0</span></a><ul></ul></li></ul></div></nav>
+<nav class="toc" aria-label="本期目录"><div class="toc-inner"><div class="toc-head"><span class="rail-zh">本期目录</span>Contents</div><ul><li class="t-sec"><a href="#intro">本期<span class="n">0</span></a><ul></ul></li><li class="t-sec"><a href="#s-1">一、先问该不该做成 Palantir 那样<span class="n">0</span></a><ul></ul></li><li class="t-sec"><a href="#s-2">二、服务化陷阱是怎样形成的<span class="n">0</span></a><ul></ul></li><li class="t-sec"><a href="#s-3">三、一套尽量少、但能看清健康度的度量<span class="n">3</span></a><ul><li class="t-it"><a href="#s-3-1">1. 这一家的结果有没有发生</a></li><li class="t-it"><a href="#s-3-2">2. 下一家的起点有没有被抬高</a></li><li class="t-it"><a href="#s-3-3">3. 定制是在收窄，还是在堆积</a></li></ul></li><li class="t-sec"><a href="#s-4">四、部署热度不等于已证实的投资回报<span class="n">0</span></a><ul></ul></li><li class="t-sec"><a href="#s-5">下期预告<span class="n">0</span></a><ul></ul></li></ul></div></nav>
 <div class="wrap">
   <p class="disclaimer" role="note">以下内容均为 Grok AI 生成，仅供学习参考。</p>
   <header class="plate">
@@ -609,105 +610,101 @@ p.disclaimer{margin:24px 0 0!important;font-size:13px!important;line-height:1.7!
       <h1 class="title">FDE<br><em>Digest</em></h1>
     </div>
     <div class="dateline">
-      <span><b>周一 · 2026年11月23日</b></span>
-      <span>第 <span class="num">4</span> 期</span>
+      <span><b>周二 · 2026年11月24日</b></span>
+      <span>第 <span class="num">5</span> 期</span>
     </div>
   </header>
 <details class="arch-m"><summary>往期归档</summary><ul class="a-list">
-      <li class="a-current"><a href="digest-2026-11-23.html"><span class="a-date">2026-11-23</span><span class="a-zh">周一 · 2026年11月23日</span></a></li>
+      <li class="a-current"><a href="digest-2026-11-24.html"><span class="a-date">2026-11-24</span><span class="a-zh">周二 · 2026年11月24日</span></a></li>
+      <li><a href="digest-2026-11-23.html"><span class="a-date">2026-11-23</span><span class="a-zh">周一 · 2026年11月23日</span></a></li>
       <li><a href="digest-2026-11-22.html"><span class="a-date">2026-11-22</span><span class="a-zh">周日 · 2026年11月22日</span></a></li>
       <li><a href="digest-2026-11-21.html"><span class="a-date">2026-11-21</span><span class="a-zh">周六 · 2026年11月21日</span></a></li>
       <li><a href="digest-2026-11-17.html"><span class="a-date">2026-11-17</span><span class="a-zh">周二 · 2026年11月17日</span></a></li>
 </ul></details>
-<details class="toc-m"><summary>本期目录</summary><ul><li class="t-sec"><a href="#intro">本期<span class="n">0</span></a><ul></ul></li><li class="t-sec"><a href="#s-1">一、先对准这条分界：现场赢了，还要让下一家从更高处出发<span class="n">0</span></a><ul></ul></li><li class="t-sec"><a href="#s-2">二、Palantir：现场配置和代码，怎样被回收进平台<span class="n">3</span></a><ul><li class="t-it"><a href="#s-2-1">两条轨道：一边服务「这一家」，一边服务「下一家」</a></li><li class="t-it"><a href="#s-2-2">缺功能时可以动手，但要走产品和评审</a></li><li class="t-it"><a href="#s-2-3">配置本身也要被分享，而不是留在单个项目里</a></li></ul></li><li class="t-sec"><a href="#s-3">三、OpenAI：Field notes、产品汇报，以及 Presence 与 Agents SDK 怎样从部署里长出来<span class="n">4</span></a><ul><li class="t-it"><a href="#s-3-1">先看已经公开的例行接口</a></li><li class="t-it"><a href="#s-3-2">从 Swarm 到 Agents SDK：把现场好用的框架收成产品</a></li><li class="t-it"><a href="#s-3-3">Presence：先分清什么必须定制，什么可以变成砌块</a></li><li class="t-it"><a href="#s-3-4">把定制压下去：共同基座、可复用模式，以及「两个月变成一天」</a></li></ul></li><li class="t-sec"><a href="#s-4">四、例行接口该长成什么样，以及何时该拒绝定制<span class="n">3</span></a><ul><li class="t-it"><a href="#s-4-1">Anthropic：把模式整理直接写进职责</a></li><li class="t-it"><a href="#s-4-2">把已经公开的接口放到一起看</a></li><li class="t-it"><a href="#s-4-3">何时该拒绝定制</a></li></ul></li><li class="t-sec"><a href="#s-5">下期预告<span class="n">0</span></a><ul></ul></li></ul></details>
+<details class="toc-m"><summary>本期目录</summary><ul><li class="t-sec"><a href="#intro">本期<span class="n">0</span></a><ul></ul></li><li class="t-sec"><a href="#s-1">一、先问该不该做成 Palantir 那样<span class="n">0</span></a><ul></ul></li><li class="t-sec"><a href="#s-2">二、服务化陷阱是怎样形成的<span class="n">0</span></a><ul></ul></li><li class="t-sec"><a href="#s-3">三、一套尽量少、但能看清健康度的度量<span class="n">3</span></a><ul><li class="t-it"><a href="#s-3-1">1. 这一家的结果有没有发生</a></li><li class="t-it"><a href="#s-3-2">2. 下一家的起点有没有被抬高</a></li><li class="t-it"><a href="#s-3-3">3. 定制是在收窄，还是在堆积</a></li></ul></li><li class="t-sec"><a href="#s-4">四、部署热度不等于已证实的投资回报<span class="n">0</span></a><ul></ul></li><li class="t-sec"><a href="#s-5">下期预告<span class="n">0</span></a><ul></ul></li></ul></details>
 <article class="entry pm-entry" id="intro">
-  <p class="name">FDE Digest · 第 4 期：如何把现场沉淀回产品——平台回收、Field notes，以及何时该拒绝定制</p>
-    <p class="pm-text">本期按第 1 期文末的计划、第 3 期的预告，专讲如何把现场沉淀回产品。第 1 期已经用几条原则概括过这条回路：Palantir 把配置和代码送回平台，OpenAI 用 Field notes、产品汇报，以及 Presence、Agents SDK 这类从部署里长出来的产品作为证据，Anthropic 则把「整理可重复模式并回馈产品和工程」写进职责。那是地图；这一期把路上能核对的做法补上：现场和产品之间有哪些例行接口，配置与代码怎样被回收，Presence 和 Agents SDK 是怎样从部署里长出来的，以及何时该拒绝定制。</p>
-    <p class="pm-text">不编一份「适用于所有公司的产品化手册」。能核对的材料来自不同公司、不同年代，回路的形态并不相同：有的写在一线文章里，有的写在官方长文和产品公告里，有的还只写在现行招聘职责中。文中的岗位要求、流程和效果数据，都来自已打开核对的官方页面或当事人文章，并附上链接；公司自行公布的效果数据，按「官方自述」引用，不另当作独立审计结果。现行招聘启事若未见单独发表日期，按「现行」标注，阅读时请以链接里的最新文本为准。</p>
+  <p class="name">FDE Digest · 第 5 期：度量与避坑——门槛问题、服务化陷阱，以及怎样看清健康度</p>
+    <p class="pm-text">本期按第 1 期文末的计划、第 4 期的预告，专讲度量与避坑。第 1 期已经抽出过几条能看的度量，以及 Andrusko 用来压力测试的五个追问；第 4 期则把「何时该拒绝定制」写成回收能不能成立的条件。那是地图；这一期把路上能核对的部分补上：什么情况下不该把 FDE 职能做成 Palantir 那样，服务化陷阱是怎样形成的，怎样用尽量少的度量看清健康度，以及新闻报道已经提醒过的一点——部署热度不等于已证实的投资回报。</p>
+    <p class="pm-text">不编一份「适用于所有公司的 KPI 手册」，也不把投资人的追问改写成打分表。能核对的材料来自不同位置：有的写在投资人用来分清「可复制的平台」和「高接触服务」的文章里，有的写在产品公司和官方长文对结果的定义里，有的则是新闻对公开证据的保留。文中的效果数据、投入计划和招聘热度，都来自已打开核对的官方页面、当事人文章或新闻报道，并附上链接；公司自行公布的效果数据，按「官方自述」引用，不另当作独立审计结果。现行页面若未见单独发表日期，按「现行」标注，阅读时请以链接里的最新文本为准。</p>
 </article>
 <div class="sec-head" id="s-1">
-  <span class="lbl"><span class="zh-lbl">一、先对准这条分界：现场赢了，还要让下一家从更高处出发</span></span>
+  <span class="lbl"><span class="zh-lbl">一、先问该不该做成 Palantir 那样</span></span>
 </div>
 <article class="entry pm-entry">
-    <p class="pm-text">第 1 期已经写过，FDE 和「很强的实施工程师」最要紧的分界，是把现场送回产品，而不是把定制永远留在客户那里。把它放到产品组织里看，这不只是一种职业美德，而是这条职能能不能成立的条件。</p>
-    <p class="pm-text">Marty Cagan 把这个风险写得很直白。他承认 Palantir 的模型很有效，但紧接着说：如果只有 FDE、没有平台产品组织把共性抽象回去，<b>很快就会留下成千上万套需要无限期维护和改进的大型定制方案</b>。Palantir 之所以有效，是因为它把自己当成平台产品公司来做这件事：每个 FDE 用当时最新的平台服务做原型，平台产品组织则持续把 FDE 识别出的新能力一般化，写进不断演进的平台。平台产品要做的，是综合许多 FDE、或同一批 FDE 在许多客户那里听到的东西，找出可落地的抽象，让下一类似工作明显更快。出处：<a href="https://www.svpg.com/forward-deployed-engineers/">Marty Cagan，《Forward Deployed Engineers》，Silicon Valley Product Group，2025-09-17</a>。</p>
-    <p class="pm-text">OpenAI 把同一条分界写成了团队目标。Colin Jarvis 在 2026 年 10 月的官方长文里写：在模型今天就能完成的地方，FDE 和产品、客户一起把方案做成可重复的；在模型还做不到的地方，则和客户、研究一起把缺口定义清楚并改进。他给这条工作下的判断标准是：<b>每一次合作都要让下一家客户从更高的起点出发——如果把底线抬到客户下次解决这类问题时不再需要 FDE，团队就做得很好。</b> 文首那个更锋利的说法，是同一标准的另一种写法：有人问，当 Codex 能「一键做完」他们花几个月建起来的用例时，FDE 还做什么？他的回答是，<b>如果我们每隔几个月就让自己变得不再必要，说明 FDE 团队把工作做对了。</b> 出处：<a href="https://openai.com/index/forward-deployed-engineering-means">Colin Jarvis，《What FDE means at OpenAI》，OpenAI，2026-10-22</a>。</p>
-    <p class="pm-text">现行企业页把「规模化行得通的部分」写成合作路径里的一步：把已经验证过的工作流、领域知识和集成，打包成可在多个团队之间共享的可复用能力。页面还直接回答「FDE 是否提供专业服务」：<b>不是。</b> FDE 是面向客户的工程师，和专业服务合作伙伴一起，解决仍处于 AI 前沿的问题；如果用现有 AI 能力已经能做，通常就不需要 FDE。出处：<a href="https://openai.com/business/forward-deployed-engineering/">OpenAI 企业 FDE 页</a>（现行页面，未见单独发表日期）。</p>
-    <p class="pm-text">a16z 的 Marc Andrusko 从组织位置补了一刀：<b>必须让 FDE 成为产品的一部分，而不仅仅是交付。</b> 在 Palantir 那套做法里，前向部署的人深度参与产品发现和迭代，强的产品组织和平台团队靠他们在一线学到的东西吃饭。<b>如果他们坐在独立的「专业服务」单元里，反馈回路会断，组织会滑向纯服务生意。</b> 出处：<a href="https://a16z.com/the-palantirization-of-everything/">Marc Andrusko，《The Palantirization of everything》，Andreessen Horowitz，2026-01-16</a>。</p>
-    <p class="pm-text">所以，这一期要核对的不是「要不要重视反馈」这种口号，而是：反馈通过什么例行接口回到产品，现场做过的东西怎样被回收，以及——同样重要——什么时候应该对定制说不。</p>
+    <p class="pm-text">Andrusko 2026 年 1 月那篇《The Palantirization of everything》的起点，不是「怎样招一支 FDE」，而是对这股模仿潮本身持保留态度。他写，创业公司的路演里出现了一种新向往：「我们基本上就是某领域的 Palantir」；前向部署、深度定制工作流、像特种部队一样作战，都很吸引人。企业在货架产品里已经很难分辨哪些是真信号，而「我们派工程师进你们的组织，把这件事做成」对拿下第一批七位数合同尤其有力。但他紧接着说，自己并不认为「Palantirization」能当成一套普遍可复制的打法：Palantir 是「category of one」，多数只复制这套外观的公司，是在把自己做成带软件估值倍数的昂贵服务生意，却没有可复利的竞争优势。出处：<a href="https://a16z.com/the-palantirization-of-everything/">Marc Andrusko，《The Palantirization of everything》，Andreessen Horowitz，2026-01-16</a>。</p>
+    <p class="pm-text">所以，第一组该先回答的，不是度量看板里的格子，而是门槛问题：这件事值不值得、以及适不适合，用 Palantir 那种前向部署来做。</p>
+    <p class="pm-text">Andrusko 建议，与其问「我们怎样成为 Palantir」，不如先过一组关口：</p>
+    <ul class="pm-tips">
+      <li><p><b>问题是否足够关键：</b> 这是人命、国家安全、以十亿计的价值，还是 10–20% 的效率提升？赌注越高，前向部署越说得通。他另外举过一个对照：Palantir 早期部署往往发生在「否则什么都转不起来」的领域，价值用十亿美元、人命或地缘结果来衡量，而不是用增量效率；如果你是在向一家中型市场 SaaS 公司出售「把销售流程优化 8%」，就负担不起同等程度的定制化驻场，回报空间撑不起几个月的现场工程。</p></li>
+      <li><p><b>客户是否足够集中：</b> 你是在卖给几十个超大账户，还是成千上万个小客户？嵌入式工程在高单价、客户集中的基础上，才更容易扩得动。</p></li>
+      <li><p><b>领域是否有足够共性：</b> 客户是否共享相近的工作流、使用相近的软件工具，还是每一次部署本质上都不同？如果每个客户都是雪花，就很难做成一致的平台；一定程度的同质，反而有助于产品化。</p></li>
+      <li><p><b>是否处于监管重、数据集成极痛的领域：</b> 国防、医疗、金融犯罪、关键基础设施这类地方，Palantir 式的集成工作才更容易真正产生价值。</p></li>
+    </ul>
+    <p class="pm-text">他的判断是：如果关键性低、客户碎、集成并不复杂，全面「Palantirization」几乎肯定是错的模型，那些条件更适合自下而上的产品驱动增长。出处：同上。</p>
+    <p class="pm-text">这组问题的用处，是先挡住一种常见的跳步：还没分清问题值不值得重投入，就开始按「派精英小分队进场、先做成、以后再收成平台」来招人。第 1 期写过，搭 FDE 职能要先问该不该做成 Palantir 那样；第 4 期写过，回收若要成立，就必须会拒绝一部分定制。这一期要补上的是：有些场景里，连「先做重、再回收」这条路本身就不该选。</p>
+    <p class="pm-text">Andrusko 把更有用的问题收成一句：我们到底需要最少多少 Palantir 式的前向部署，才能补上这个品类里的 AI 落地缺口——以及，能多快把它转成真正的平台生意。出处：同上。</p>
 </article>
 <div class="sec-head" id="s-2">
-  <span class="lbl"><span class="zh-lbl">二、Palantir：现场配置和代码，怎样被回收进平台</span></span>
+  <span class="lbl"><span class="zh-lbl">二、服务化陷阱是怎样形成的</span></span>
 </div>
 <article class="entry pm-entry">
-    <p class="pm-text">公开材料里，Palantir 把「回收」写成了两种互相配合的动作：一种是把缺失的能力做回核心产品，一种是把现场配好的方案分享出去，让后来的部署从更高的基线开始。这些叙述主要来自 2019 年和 2020 年的一线文章，时间要标明，不宜直接当成 2026 年的制度文本。</p>
-    <p class="pm-label" id="s-2-1">两条轨道：一边服务「这一家」，一边服务「下一家」</p>
-    <p class="pm-text">2019 年那篇解释 Dev 与 Delta 的文章，把分工写得很清楚。Dev（软件工程师）在产品研发里，拥有平台的某个组件，做的设计会影响最终部署到许多客户、许多用例上的代码，焦点是<b>「一项能力，许多客户」</b>；Delta（Forward Deployed Software Engineer）在商务拓展里，直接支持一个客户，用平台、语言、开源工具和自己的创造力，去推动那个客户的具体目标，焦点是<b>「一个客户，许多能力」</b>。出处：<a href="https://blog.palantir.com/dev-versus-delta-demystifying-engineering-roles-at-palantir-ad44c2a6e87">Palantir，《Dev versus Delta: Demystifying engineering roles at Palantir》，2019-04-08</a>。</p>
-    <p class="pm-text">如果只有后一条轨道，现场会不断长出只服务眼前客户的方案。Cagan 后来说的「成千上万套定制系统」，指的就是这种只往前走、不往回收的结果。出处：<a href="https://www.svpg.com/forward-deployed-engineers/">SVPG，2025-09-17</a>。</p>
-    <p class="pm-label" id="s-2-2">缺功能时可以动手，但要走产品和评审</p>
-    <p class="pm-text">回收并不是禁止 FDE 写平台代码，而是要求这些代码进入产品的轨道。曾做过 Delta、后来做 Dev 的 Ian 说：如果挡在商务拓展团队和一次成功结果之间的，是平台里缺失的功能、能力或缺陷修复，<b>由他们花时间去做，可能是合理的</b>；但他强调，<b>必须和产品团队协调</b>。纽约的 Delta Elisa 把更大的需求写得更硬：更大的功能请求需要对照产品路线图验证，并被纳入路线图；开发过程中要持续和产品团队沟通，请他们解答代码问题，或验证、评审你的改动。出处：<a href="https://blog.palantir.com/dev-versus-delta-demystifying-engineering-roles-at-palantir-ad44c2a6e87">Palantir，2019-04-08</a>。</p>
-    <p class="pm-text">产品这边也有对接口。负责 Foundry 某团队后端的 Helen 说，她每周会花几小时做优先级、规划和跟踪；其中一项就是<b>和面向客户的团队见面，讨论他们最高优先级的产品请求，并判断这些请求如何进入路线图</b>。Ian 自己后来在 Gotham 上做试点阶段的新能力时，也是和正在客户那里试点的团队一起，按很快的节奏加功能，同时为这个还年轻的产品做面向未来的决策。出处：同上。</p>
-    <p class="pm-text">能核对的，不是「FDE 想加什么就加什么」，而是一条可检查的顺序：眼前的缺口能不能先用现有平台组合起来；若必须改平台，是缺陷修复、小能力，还是要对照路线图的大需求；只要动手，就进入协调、沟通和评审，而不是在客户环境里另起一套无人认领的代码。</p>
-    <p class="pm-label" id="s-2-3">配置本身也要被分享，而不是留在单个项目里</p>
-    <p class="pm-text">不是每一次回场都表现为「给核心产品提了一次 PR」。2020 年，Forward Deployed Software Engineer Brian 把另一层责任写得很清楚：FDE 的一项关键职责，是把现场的技术经验分享回商务拓展和产品研发团队。他们通常是为特定客户配置软件，但常常发现这些配置方案对许多其他客户也有用。他写，<b>一些最有价值的产品增量，就是这样从现场来的。</b> 把配好的产品和流程分享出去，是为了让其他 FDE 知道平台里已经有什么，并有权在这些工作上继续叠加。他自己的例子是网络安全相关项目：他把配好的方案和经验分享给公司里新启动同类工作的团队，后来大家就从一个<b>更贴合、也更经受过检验的基线产品</b>出发。出处：<a href="https://blog.palantir.com/a-day-in-the-life-of-a-palantir-forward-deployed-software-engineer-45ef2de257b1">Palantir，《A Day in the Life of a Palantir Forward Deployed Software Engineer》，2020-11-02</a>。</p>
-    <p class="pm-text">这是他的当事人叙述，不是一份覆盖全公司的产品化审计。但它把「回收」从口号落实成了两件很具体的事：现场配过的东西要被后来的人看见，下一支团队的起点要被抬高。若配置只留在单个项目的仓库里，平台表面上还在，实际上每个客户都在重新发明一次。</p>
+    <p class="pm-text">门槛问题若没有挡住不该做的模仿，陷阱通常不是突然出现的，而是现场不断赢、产品却没长出来。</p>
+    <p class="pm-text">Andrusko 把这个陷阱写得很直接。Palantir 之所以成立，是因为定制工作下面有真正的平台；有观察者指出，如果只复制「把工程师嵌进去」这一层，最后就会留下成千上万套难以维护和升级的定制部署。到了那个地步，你就不是「某领域的 Palantir」，而是「带了更漂亮前端的某领域 Accenture」。出处：<a href="https://a16z.com/the-palantirization-of-everything/">a16z，2026-01-16</a>。</p>
+    <p class="pm-text">Marty Cagan 从产品公司的角度写过同一件事。他承认 Palantir 的模型很有效，但紧接着说：如果只有 FDE、没有平台产品组织把共性抽象回去，很快就会留下成千上万套需要无限期维护和改进的大型定制方案。平台产品要做的，是综合许多 FDE、或同一批 FDE 在许多客户那里听到的东西，找出可落地的抽象，让下一类似工作明显更快。出处：<a href="https://www.svpg.com/forward-deployed-engineers/">Marty Cagan，《Forward Deployed Engineers》，Silicon Valley Product Group，2025-09-17</a>。</p>
+    <p class="pm-text">形成路径，公开材料里至少能核对出几条，不必把它们捏成单一故事：</p>
+    <ul class="pm-tips">
+      <li><p><b>组织位置放错。</b> Andrusko 写：必须让 FDE 成为产品的一部分，而不仅仅是交付；如果他们坐在独立的「专业服务」单元里，反馈回路会断，组织会滑向纯服务生意。出处：<a href="https://a16z.com/the-palantirization-of-everything/">a16z，2026-01-16</a>。第 4 期已经把这条当成产品和 FDE 的分界来写，这里只强调它的后果：回路一断，现场越成功，服务生意越大，平台却不一定更强。</p></li>
+      <li><p><b>「以后再产品化」没有约束。</b> 他并不反对早期把工程师嵌到设计伙伴旁边，不惜代价让前 3–5 个客户进入生产，并用这些合作来压迫测试原语和抽象。他反对的是没有时限、没有比例、没有回收节奏：例如「90 天冲刺到生产」，某账户每 100 万美元 ARR 对应的工程人数上限，以及每个季度都把定制代码回收成可复用配置或模板。否则，「我们以后再产品化」会变成「我们一直没顾得上」。出处：同上。</p></li>
+      <li><p><b>人才模型被外观带走。</b> 他还写，Palantir 花了十多年招和训练能写生产代码、又能在上校、CIO 和监管者的房间里把事做成的通才；多数创业公司不能假设自己招得到同样密度的人。实践里，「我们要建一支 Palantir 式的 FDE 团队」常常退化成：售前解决方案工程师被改名为 FDE，初级通才被要求同时做产品、实施和客户管理，以及领导层从未近距离看过 Palantir 的部署、只是喜欢这种氛围。这是他的观察，不是一份覆盖全行业的人才审计。出处：同上。</p></li>
+    </ul>
+    <p class="pm-text">第 4 期已经写过「何时该拒绝定制」。这一期要看的，是拒绝如果没有发生，组织会滑向哪里：定制会堆积，维护负担会留下，看起来像软件公司的增长，可能只是服务收入在变厚。避坑的关键不是多写几句「我们是产品公司」，而是后文那些能够被核对的问题，必须定期有答案。</p>
 </article>
 <div class="sec-head" id="s-3">
-  <span class="lbl"><span class="zh-lbl">三、OpenAI：Field notes、产品汇报，以及 Presence 与 Agents SDK 怎样从部署里长出来</span></span>
+  <span class="lbl"><span class="zh-lbl">三、一套尽量少、但能看清健康度的度量</span></span>
 </div>
 <article class="entry pm-entry">
-    <p class="pm-text">OpenAI 把这条回路同时写进了内部节奏、现行岗位，也写进了后来公开的产品。和第 1 期已经举过的语音、税务例子相比，这一节更关注：这些部署怎样变成了后来的人可以接着用的产品，而不是再把数字逐项复述一遍。</p>
-    <p class="pm-label" id="s-3-1">先看已经公开的例行接口</p>
-    <p class="pm-text">The Pragmatic Engineer 在 2025 年 8 月采访当时的 OpenAI FDE 负责人 Colin Jarvis 时，记录过一套对内的工作结构。FDE 的主要精力在客户项目上，同时也和内部团队分享知识：与研究团队通常两周一次的知识分享；与产品负责人和产品经理的双周汇报；全员可见的 「FDE Field notes」Slack 频道，任何 FDE 都可以在这个对内公开的频道里分享洞察；以及每季度一次、把分散在 3 大洲 8 个城市的团队聚到一起的全员训练营。出处：<a href="https://newsletter.pragmaticengineer.com/p/forward-deployed-engineers">Gergely Orosz，《What are Forward Deployed Engineers, and why are they so in demand?》，The Pragmatic Engineer，2025-08-12</a>。</p>
-    <p class="pm-text">现行旧金山 FDE 启事把「成功」写成了同一条回路的考核方式：通过生产采用、可测的工作流影响，以及<b>能够改变产品和模型路线图的、由评估驱动的反馈</b>来衡量成功。职责里还直接写：把行之有效的模式整理成工具、手册或他人能用的砌块；把现场反馈分享给研究和产品，帮助他们理解模型在哪里成功、在哪里还能改进。出处：<a href="https://openai.com/careers/forward-deployed-engineer-%28fde%29-sf-san-francisco/">OpenAI，Forward Deployed Engineer (FDE) - SF 现行招聘启事</a>。</p>
-    <p class="pm-text">企业页把这层关系收成对外部的一句说明：客户部署让他们看到实践中什么行得通、模型和产品在哪里仍不足；FDE 把这些收获带给产品和研发，帮助把成功的方法做成可复用能力，也把真实世界里的难题变成改进方向。出处：<a href="https://openai.com/business/forward-deployed-engineering/">OpenAI 企业 FDE 页</a>。</p>
-    <p class="pm-text">这些是已经公开的接口，不是一份内部工时表。能带走的检查项很具体：现场洞察有没有一个全员可见的地方；产品和 FDE 是不是定期见面，而不只在项目出问题时才沟通；评估和真实使用，是不是真能改路线图。</p>
-    <p class="pm-label" id="s-3-2">从 Swarm 到 Agents SDK：把现场好用的框架收成产品</p>
-    <p class="pm-text">The Pragmatic Engineer 还写：FDE 团队是 OpenAI Agents SDK 的重要贡献者。更早的时候，解决方案架构团队做了 Swarm 框架，为的是让客户更简单、更快地接入 OpenAI 的 API——他们意识到，当时已有的 agent SDK 学习曲线太高，希望在把一组互相交接的智能体交给客户时，能提供更简单的东西。到采访写作时，Swarm 已被 OpenAI Agents SDK 取代，解决方案架构团队和 FDE 团队都为它做贡献。出处：<a href="https://newsletter.pragmaticengineer.com/p/forward-deployed-engineers">The Pragmatic Engineer，2025-08-12</a>。</p>
-    <p class="pm-text">现行的 Agents SDK 文档把这层关系写进了产品说明：它是此前智能体实验项目 Swarm 的生产就绪升级版，并用智能体、交接、护栏等少量原语，降低把这类应用做成现实系统的门槛。这是官方文档的现行表述，未见单独发表日期。出处：<a href="https://openai.github.io/openai-agents-python/">OpenAI Agents SDK 现行文档</a>。</p>
-    <p class="pm-text">Jarvis 后来在官方长文里追述 Presence 的来路时，用的是另一组连贯、但不宜被直接合并成同一个产品名的说法：这项工作从 Swarm 开始，经由 Agents API 演进。下面谈到 Presence 时，以他的官方表述为准，不把「Agents API」自动写成「Agents SDK」。出处：<a href="https://openai.com/index/forward-deployed-engineering-means">OpenAI，2026-10-22</a>。</p>
-    <p class="pm-label" id="s-3-3">Presence：先分清什么必须定制，什么可以变成砌块</p>
-    <p class="pm-text">2026 年 7 月 22 日，OpenAI 公开发布 Presence，定位为帮助企业在语音和聊天中部署可被治理的智能体，使其能够回答问题、处理事务、使用公司系统、执行获准的动作，并在需要时升级给人工。公告写，Presence 是在与研究团队紧密协作中发展起来的，<b>每一次部署里被一般化的洞察，会继续进入研究和产品，并随时间改进对所有客户的产品</b>。公司还要决定哪些东西在多次部署之间保持一致——例如政策、评估和升级规则——哪些又该随工作流或渠道改变，好让团队能在行得通的基础上扩展，而不必从头再来。出处：<a href="https://openai.com/index/introducing-openai-presence/">OpenAI，《Introducing OpenAI Presence》，2026-07-22</a>。</p>
-    <p class="pm-text">三个月后，Jarvis 把产品来源说得更明确：<b>OpenAI Presence 是面向企业的语音和聊天智能体产品，它从真实的客户部署中长出来。</b> 工作从 Swarm 开始，经由 Agents API 演进；到他撰文时，已有一个客户用 AI 处理超过一半的来电。把这些部署送进生产，教会他们哪些问题必须定制，哪些砌块其他团队也能用；他们把这些砌块收进 Presence，好让开发者在实现受监管的工作流时，不必重建底层基础设施。每一次部署都在塑造产品，也给下一家客户更好的起点。出处：<a href="https://openai.com/index/forward-deployed-engineering-means">OpenAI，2026-10-22</a>。文中「超过一半的来电」是官方自述，没有点名这家客户，也不是独立审计。</p>
-    <p class="pm-text">现行帮助中心把交付方式写得很克制：Presence 目前是有限开放的托管部署，不是自助产品；通常由 OpenAI 的 FDE、选定的部署合作伙伴，或两者一起，和客户走一遍从定义结果、接入系统、安全与法务审阅、模拟与验收，到受控上线、再依据证据改进的过程。智能体不会因为「把文档喂进去」就自动具备生产条件。出处：<a href="https://help.openai.com/en/articles/20001405-openai-presence">OpenAI Help Center，《OpenAI Presence》现行说明</a>（现行帮助文档，未见单独发表日期）。</p>
-    <p class="pm-text">第 1 期已经写过电信语音和 Thrive Holdings 的 Tax AI。把它们放回这条产品回路里看，更值得带走的不是再记一遍分数，而是官方自己强调的回收方向：语音项目里，FDE 先和客户把平台与评估搭起来，再把能力缺口交给研究去补，由此得到的语音模型既服务该客户，也服务其他定制部署，以及通过 Presence 提供的托管部署；The Pragmatic Engineer 还写，这项工作也改进了 OpenAI 的 Realtime API。Tax AI 在租赁物业申报上花了六周工程和从业者审阅，才达到官方所说的 90% 精确率和召回率，但 Jarvis 随后写的是：<b>这些工作形成了可复用模式，使 Tax AI 更容易扩展到其他复杂税表。</b> 这些都是官方或采访中的自述。出处：<a href="https://openai.com/index/forward-deployed-engineering-means">OpenAI，2026-10-22</a>；<a href="https://newsletter.pragmaticengineer.com/p/forward-deployed-engineers">The Pragmatic Engineer，2025-08-12</a>。</p>
-    <p class="pm-label" id="s-3-4">把定制压下去：共同基座、可复用模式，以及「两个月变成一天」</p>
-    <p class="pm-text">Jarvis 还写过一次更靠近「如何回收定制代码」的过程。他们已经证明这些工作流能创造价值，但每一个要扩展到下一个团队时，仍需要太多定制集成。后来 Codex 能力增强，一名 FDE 先试着围绕它重建自己的应用，再和团队一起把用例迁到以 Codex 为核心的共同框架上。定制应用变成建立在共同 Codex 原语上的插件和技能；Codex 也成了界面，此前为单个用例写的终端界面和命令行工具被收掉。官方自述是：他们得以从每个项目中去掉大约 90% 的定制代码。扩展到下一个团队时，常常只需换上新的连接器或 MCP 服务器、再做一套新的评估。其中一个 2026 年 8 月的例子是：首次部署花了两个月，扩展到第二个团队只花了一天。Jarvis 把这写成「让自己变得不再必要」的一种版本：到达生产的过程先搞清什么是要紧的；底层产品改进之后，就可以替换掉大部分定制实现，同时保住它已经交付的价值。出处：<a href="https://openai.com/index/forward-deployed-engineering-means">OpenAI，2026-10-22</a>。去掉多少代码、第二次部署花了多久，都是官方自述，不宜外推成所有项目的通例。</p>
-    <p class="pm-text">对准备建这条回路的人，这几段材料合在一起，其实给出了一个顺序：先用定制换到生产里站得住的结果，再分清哪些必须保持定制、哪些可以变成砌块；然后把砌块收进产品，并让下一支团队的起点真的变短。没有前面那次「两个月」的学习，后面的「一天」不会凭空出现；但若没有回收，两个月就会在下一个客户那里再来一次。</p>
+    <p class="pm-text">第 1 期的建议仍然成立：先定几条能看的度量，而不是先定一个很满的 KPI 看板。下面只把已经出现在官方或权威材料里的尺度收成三组。它们不能加总成一个健康分数，但若一组都答不清，就不宜把「我们会产品化」「我们已经证明了回报」写得很满。</p>
+    <p class="pm-label" id="s-3-1">1. 这一家的结果有没有发生</p>
+    <p class="pm-text">Palantir 对 Delta 的基本度量很朴素：成功与否，看客户那个具体目标有没有被推动，而不是平台组件是否漂亮地服务了所有租户。出处：<a href="https://blog.palantir.com/dev-versus-delta-demystifying-engineering-roles-at-palantir-ad44c2a6e87">Palantir，《Dev versus Delta: Demystifying engineering roles at Palantir》，2019-04-08</a>。</p>
+    <p class="pm-text">OpenAI 现行企业页把「如何衡量成功」写成进场时就要做的事：一开始就和客户共同定义可测的运营结果，例如周转时间、质量、吞吐量、人工投入；然后在代表性工作上测试，并对照生产要求。同一页还把「定义成功」写成先明确要创造的业务价值，例如降低成本、节省时间、改善客户体验或增加收入。出处：<a href="https://openai.com/business/forward-deployed-engineering/">OpenAI，《Forward deployed engineering for enterprise AI》现行企业页</a>（官方页面，未见单独发表日期）。</p>
+    <p class="pm-text">Colin Jarvis 把同一原则写成团队口令：先从结果出发，做成功必须做的事，然后再谈规模。他强调，令人印象深刻的演示，往往在有人追问它是否在真实世界里成立之前，就能走很远；FDE 的工作，是把客户的问题做到一个能在生产里站得住的标准。出处：<a href="https://openai.com/index/forward-deployed-engineering-means">Colin Jarvis，《What FDE means at OpenAI》，OpenAI，2026-10-22</a>。</p>
+    <p class="pm-text">他在文中举过一个官方自述的例子：2025 年中，大约 15 名 FDE 与一家大型半导体客户做十多个用例，目标是让验证过程变成 AI 原生的。验证在该行业可占到一个项目约 70% 的工作量。他们和客户工程师一起做评估，检验模型能否生成有用的测试、能否正确诊断芯片故障。前 3 到 6 个月里，这些用例都进入了生产并有了早期用户采用；他写下的结果包括：基于 AI 的定向测试生成节省约 48% 的时间，内核优化带来 22% 的中位性能提升，以及把数周的调试压缩到数小时。这些是 OpenAI 官方长文里的自述，不是独立审计结果。出处：同上。</p>
+    <p class="pm-text">能从这些材料里带走的，不是某一家的百分比，而是检查顺序：结果是不是一开始就和客户一起写成可测的运营指标；它是不是在代表性工作和生产要求上被对照过；演示或局部效率，能不能代替「生产里站得住」。</p>
+    <p class="pm-label" id="s-3-2">2. 下一家的起点有没有被抬高</p>
+    <p class="pm-text">单次驻场成功，还不能说明这支职能是健康的。Jarvis 给这条工作下的判断标准是：每一次合作都要让下一家客户从更高的起点出发——如果把底线抬到客户下次解决这类问题时不再需要 FDE，团队就做得很好。他在文首那个更锋利的说法，是同一标准的另一种写法：如果我们每隔几个月就让自己变得不再必要，说明 FDE 团队把工作做对了。出处：<a href="https://openai.com/index/forward-deployed-engineering-means">OpenAI，2026-10-22</a>。</p>
+    <p class="pm-text">可重复性因此是一条独立的度量，而不是「客户满意」的附属品。Jarvis 公开过一个 2026 年 8 月的例子：首次部署花了两个月，把方案扩展到第二个团队只花了一天；随着扩展，后续团队的上手继续变快。同一段叙述里，他们还写到能够从每个项目中去掉大约 90% 的定制代码，把定制应用收成建在共同 Codex 原语上的插件和技能。这是官方自述的扩展例子，衡量的不是一次项目的英雄主义，而是下一队的起点有没有被抬高。出处：同上。</p>
+    <p class="pm-text">Cagan 把平台产品的目标写成同一件事：让下一类似工作明显更快。出处：<a href="https://www.svpg.com/forward-deployed-engineers/">SVPG，2025-09-17</a>。第 4 期已经用 Palantir 的配置分享、OpenAI 的「两个月变成一天」讨论过回收；这里只把它收回度量：如果第二家客户的启动时间和定制比例，并不比第一家更好看，回收就还没有被证明。</p>
+    <p class="pm-label" id="s-3-3">3. 定制是在收窄，还是在堆积</p>
+    <p class="pm-text">前两组看的是结果和可重复性。第三组看的是投入结构：现场是在把差异收进产品，还是在为每个客户堆一套新的特例。</p>
+    <p class="pm-text">Andrusko 给投资者、其实也适合内部复盘的五个追问，几乎可以直接当成这组度量的提问方式：</p>
+    <ul class="pm-tips">
+      <li><p>指出有主见的平台边界：共享产品在哪里结束，客户专属代码从哪里开始，这条边界移动有多快。</p></li>
+      <li><p>讲清楚一次部署时间线：从签约到首次生产使用花了多少工程师-月，哪些必须定制。</p></li>
+      <li><p>成熟客户第三年的利润结构是什么样：前向部署投入是否明显下降；如果没有，为什么没有。</p></li>
+      <li><p>如果明年签下 50 个客户，裂开的是招聘、实施、产品还是支持。</p></li>
+      <li><p>你们如何决定不定制。愿不愿意对定制说不，常常就是产品公司和「有漂亮演示的服务公司」的分界。</p></li>
+    </ul>
+    <p class="pm-text">他写，如果这些回答干脆、立足于真实部署、并且在架构上自洽，那么某种程度的 Palantir 式前向部署，才可能真的构成优势；如果回答含混，或迄今每次合作都完全独一无二，就很难为可重复性和真正的规模背书。出处：<a href="https://a16z.com/the-palantirization-of-everything/">a16z，2026-01-16</a>。</p>
+    <p class="pm-text">不必另外发明一套「健康阈值」。能核对的，是这些问题有没有定期被用真实部署回答：边界有没有往产品一侧移动，首次进入生产的定制量和工程师-月是不是在下降，成熟客户是否还在消耗几乎同样多的现场投入，以及——若突然多签几十个客户——首先裂开的是不是产品，而不是招聘和实施。答不清楚，就回到第二节的陷阱：增长看起来很快，底下堆着的可能是服务。</p>
 </article>
 <div class="sec-head" id="s-4">
-  <span class="lbl"><span class="zh-lbl">四、例行接口该长成什么样，以及何时该拒绝定制</span></span>
+  <span class="lbl"><span class="zh-lbl">四、部署热度不等于已证实的投资回报</span></span>
 </div>
 <article class="entry pm-entry">
-    <p class="pm-text">Palantir 和 OpenAI 已经提供了可核对的产品与一线证据。Anthropic 目前能核对得最清楚的，是它把同一条回路写进了职责；至于这些职责在具体产品上如何兑现，公开材料还没有同等详细的复盘，因此只按岗位文本来写，不强做成已经完成的产品案例。</p>
-    <p class="pm-label" id="s-4-1">Anthropic：把模式整理直接写进职责</p>
-    <p class="pm-text">现行伦敦 Forward Deployed Engineer 启事，把这写成一条独立职责：<b>识别并整理可重复的部署模式，把洞察贡献回产品和工程团队。</b> 同一份启事还要求，为客户交付会在生产工作流中使用的技术工件，例如 MCP 服务器、sub-agent 和 agent skills。也就是说，现场要留下的不只是一次做完的项目，还有能被再次使用的模式和工件。出处：<a href="https://job-boards.greenhouse.io/anthropic/jobs/5423029008">Anthropic，Forward Deployed Engineer 现行招聘启事</a>（现行招聘页，未见单独发表日期）。</p>
-    <p class="pm-text">现行的 Forward Deployed Engineering 经理启事把接口写得更完整。岗位说明写，经理要设定客户合作的技术和运营标准，并建立能把一次性成功变成可重复模式的手册；团队在现场得到的洞察将直接影响产品方向。职责里与「送回产品」直接相关的有：建立可复用的手册、起始仓库、集成模板，以及记录团队在现场所学的内部知识库；与产品和工程合作，把现场洞察转成产品改进，并在内部规划中担任客户的声音。出处：<a href="https://job-boards.greenhouse.io/anthropic/jobs/5442048008">Anthropic，Manager, Forward Deployed Engineering 现行招聘启事</a>（现行招聘页，未见单独发表日期）。</p>
-    <p class="pm-text">这是正在使用的岗位描述，不是一篇已经完成的产品公告。它能核对的，是 Anthropic 希望这条职能从一开始就包含「整理模式、回馈产品」，而不是等到服务生意做大了再补。</p>
-    <p class="pm-label" id="s-4-2">把已经公开的接口放到一起看</p>
-    <p class="pm-text">不把三家公司捏成一套标准流程，只把能核对的接口并置，方便以后讨论：</p>
-    <ul class="pm-tips">
-      <li><p><b>持续可见的现场记录：</b> OpenAI 有对内公开的 Field notes 频道；Anthropic 的经理职责里有内部知识库，以及手册、起始仓库和集成模板；Palantir 的 Brian 则强调，配好的产品和流程要被其他 FDE 看见，好在已有工作上叠加。</p></li>
-      <li><p><b>和产品、研究的定期见面：</b> OpenAI 在 2025 年的采访里是与研究通常两周一次、与产品和产品经理双周汇报，另有季度训练营；Palantir 的 Helen 会和面向客户的团队讨论最高优先级请求如何进入路线图；Anthropic 的经理职责写明，要在内部规划中把现场洞察转成产品改进。</p></li>
-      <li><p><b>代码和模式进入产品的闸门：</b> Palantir 要求协调、对照路线图、沟通和评审；OpenAI 的现行岗位要求把行之有效的模式收成工具、手册或砌块，并用评估驱动的反馈影响产品和模型路线图；Anthropic 则把「整理可重复部署模式」直接写成 FDE 的职责。</p></li>
-      <li><p><b>用「下一支团队快了多少」来检验：</b> Jarvis 给出的官方例子是首次两个月、第二次一天；Brian 的说法是后来的团队从一个更硬、更贴合的基线出发；Cagan 则把平台产品的目标写成：让下一类似工作显著更快。</p></li>
-    </ul>
-    <p class="pm-text">Cagan 还补了一个不必先拥有 Palantir 那种平台战略也能用的起点：FDE 最初的形态，是把同一个人派到不止一个客户那里，让他亲自看见相似与不同，目标是做出能服务多个客户的单一产品——这就是客户发现的本质。出处：<a href="https://www.svpg.com/forward-deployed-engineers/">SVPG，2025-09-17</a>。单个项目再成功，如果从来没有第二家客户被同一双眼睛对照过，抽象就很难发生。</p>
-    <p class="pm-label" id="s-4-3">何时该拒绝定制</p>
-    <p class="pm-text">回收若要成立，就必须会拒绝一部分定制。否则，现场会把全部差异都做成特例，产品边界就会被拆空。</p>
-    <p class="pm-text">Andrusko 把约束写在「可以不惜代价让前几个设计伙伴进入生产」之后：例如「90 天冲刺到生产」这类有时限的部署，明确的人力与收入比例，以及<b>每个季度都把定制代码回收成可复用配置或模板</b>。否则，「我们以后再产品化」会变成「我们一直没顾得上」。他还建议前向部署团队把时间花在选择和验证该组装哪些原语上，而不是为每个客户从零建造新的原语。出处：<a href="https://a16z.com/the-palantirization-of-everything/">a16z，2026-01-16</a>。</p>
-    <p class="pm-text">他拿来压力测试「我们是某领域的 Palantir」的五个问题里，有两个几乎就是产品和 FDE 的共同作业题。第一问：指出有主见的平台边界——共享产品在哪里结束，客户专属代码从哪里开始，这条边界移动有多快。第五问：你们如何决定不定制？他的判断是，<b>愿不愿意对定制说不，常常就是产品公司和「有漂亮演示的服务公司」的分界。</b> 出处：同上。</p>
-    <p class="pm-text">OpenAI 的材料给出了两种相关、但层次不同的「不」。一种是对合作本身：如果用现有 AI 能力已经能做，通常就不需要 FDE。出处：<a href="https://openai.com/business/forward-deployed-engineering/">OpenAI 企业 FDE 页</a>。另一种是在已经进场的合作内部：把部署送进生产之后，先分清哪些问题必须定制，哪些砌块可以交给其他团队；再随着底层产品改进，替换掉大部分定制实现，同时保住已经交付的价值。出处：<a href="https://openai.com/index/forward-deployed-engineering-means">OpenAI，2026-10-22</a>。</p>
-    <p class="pm-text">这些都不是一份可以照抄的「拒绝清单」。能核对的，是几个已经出现在官方或权威材料里的问题：这件事是否必须改产品，还是用现有能力组合就够了；如果定制，它有没有时限，以及会不会在季度节奏里被回收；共享产品和客户专属代码的边界清不清楚、有没有在往产品一侧移动；下一家客户的起点，是否真的比上一家更高。答不清楚，就不宜把「我们会产品化」写得很满。</p>
+    <p class="pm-text">前三节是组织内部能看的健康度。外部看到的，往往先是另一组更醒目的数字：招聘、培训名额和投入承诺。它们能说明需求在升温，但不能代替上一节那些度量。</p>
+    <p class="pm-text">2026 年 10 月 15 日，CNBC 以「证明 AI 支出将会得到回报」为题，报道了这条战线的扩张。文章引用劳动力市场分析公司 Lightcast 的数据称：美国 FDE 招聘启事从 2023 年的不足 200 条，增加到 2025 年的约 1,200 条，并在 2026 年前九个月超过 7,300 条；同一时期，启事中的薪资中位数达到 195,456 美元，较 2023 年上升 40%。Lightcast 还统计，2026 年前九个月 Deloitte 有 872 条不重复的 FDE 启事，Accenture 有 688 条，Google 有 499 条，KPMG 有 447 条，并注明这些数字是广告中的职位，不是已经完成的招聘。出处：<a href="https://www.cnbc.com/2026/10/15/aws-anthropic-racing-to-deploy-army-of-specialized-ai-engineers.html">Barbara Booth，《AWS, Anthropic race to deploy army of specialized engineers key to proving AI spending will pay off》，CNBC，2026-10-15</a>。</p>
+    <p class="pm-text">同一篇报道写下的公司投入计划包括：Amazon Web Services 为其前向部署工程计划投入 10 亿美元，AWS 前向部署工程副总裁 Asa Kalavade 被引述称，现在投入这笔钱，是因为客户需要这种上手帮助，好把 AI 投资更快变成结果；OpenAI 启动了由超过 40 亿美元初始投资支持的部署业务，并在当年早些时候达成收购应用型 AI 咨询与工程公司 Tomoro 的协议，预期为该业务带来约 150 名有经验的 FDE 和部署专家；Anthropic 则投入 1 亿美元，计划通过 Claude Frontier Academy，到 2027 年底培训 1 万名 FDE，首批住院式培训对象包括 Accenture、Bain、Capgemini、Commonwealth Bank of Australia、Deloitte、McKinsey、Morgan Stanley 和 Novo Nordisk 等公司的工程师；Accenture 与 Google Cloud 则在建设一支 1,000 人的前向部署工程队伍。这些数字和计划来自新闻报道中的公司表态或报道转述，不是本期独立核实的财务报表。出处：同上。</p>
+    <p class="pm-text">CNBC 自己也把证据的界限写得很清楚。文章说，迄今来自 FDE 项目的可获得证据，还谈不上确认投资回报；一些早期部署显示出生产率提升，但还不是财务回报，依据是公司自行提供的案例。它举了两个例子：在抵押贷款机构 PennyMac，Caylent 的 FDE 与产品经理和工程师一起做一套 AI 驱动的抵押贷款服务平台，一份由 AWS 提供的案例称，部分工程任务视具体工作而定，完成速度最高可达约六倍；在另一项与合规软件公司 Smarsh 的合作中，公司案例估计该项目释放了 500 万到 1,000 万美元的工程和产品产能，可转用于其他工作，但 Caylent 虽确认 FDE 参与了项目，这一数字既没有把 FDE 的贡献单独拆出来，也不等于等额的现金节省。CNBC 写：这些工程生产率与产能上的改进，并不是经过独立核实的 AI 投资回报。Anthropic 的 Corfield 也被引述承认，培训计划衡量结果还为时过早；公司计划追踪学员项目进入生产的速度，以及这些系统被使用的广泛程度。出处：同上。</p>
+    <p class="pm-text">把这一节和上一节放到一起看，界限就清楚了。招聘启事、培训名额和投入承诺，衡量的是部署热度；客户目标有没有被推动、运营结果能不能在生产里核对、下一家的起点有没有被抬高、定制是在收窄还是在堆积，衡量的才是这支职能的健康度。热度可以很高，健康度仍然有待证明。对正在看 FDE、或正在建 FDE 的人来说，更稳妥的读法不是否认这股需求，而是不要把热度数字直接写成已经证实的回报。</p>
 </article>
 <div class="sec-head" id="s-5">
   <span class="lbl"><span class="zh-lbl">下期预告</span></span>
 </div>
 <article class="entry pm-entry">
-    <p class="pm-text">第 5 期仍按第 1 期的计划，细讲度量与避坑：展开 a16z 的门槛问题和服务化陷阱，整理一套尽量少、但能看清健康度的度量；也纳入新闻报道里已经提醒过的一点——部署热度不等于已证实的投资回报。如果到时找不到足够可核对的一手材料，就按惯例缩小范围，不强写。</p>
+    <p class="pm-text">第 6 期仍按第 1 期的计划，专写产品经理如何与 FDE 共事：发现、优先级、平台抽象和共同对结果负责，回应 Cagan 把 FDE 视为产品创造者方法的那一层。如果到时找不到足够可核对的一手材料，就按惯例缩小范围，不强写。</p>
 </article>
   <footer>
-    <div>FDE DIGEST · 2026-11-23</div>
+    <div>FDE DIGEST · 2026-11-24</div>
   </footer>
 </div>
 <script>(function(){var ls=[].slice.call(document.querySelectorAll('.toc a[href^="#"]'));var ts=ls.map(function(a){return document.getElementById(a.getAttribute('href').slice(1));});
